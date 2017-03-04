@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <style type="text/css">
+    		html,
+		body {
+			height: 100%;
+			width: 100%;
+		}
+		
+		#bg-box {
+			overflow: auto;
+			height: 100%;
+			width: 100%;
+			background: url(img/bg1.png) no-repeat left top 100%/100%;
+		}
+		
+		.header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		
+		.num {
+			margin: 0 auto;
+			line-height: 0.56rem;
+			border-radius: 0 0 0.56rem 0.56rem;
+			background-color: #f8976e;
+			width: 1.12rem;
+			height: 0.56rem;
+		}
+		.girl{
+			height: 1.35rem;
+			width: 1.735rem;
+			margin: 0 auto;
+			text-align: center;
+			overflow: hidden;
+			position: relative;
+			z-index: 2;
+		}
+		.girl img{
+			width: 100%;
+		}
+		.score-box{
+			text-align: center;
+			font-size: 0.135rem;
+			width: 3.125rem;
+			height: 1.12rem;
+			background:#fff;
+			border:3px solid rgba(110,104,86,0.47);
+			border-radius: 20px;
+			margin: 0 auto 0.23rem;
+			padding: 0.165rem 0.4rem;
+		}
+		.score-box p{
+			height: 0.2rem;
+			line-height: 0.2rem;
+		}
+		.button-box{
+			text-align: center;
+			font-size: 0;
+		}
+		.button-box button{
+			color: #ea7c3f;
+			font-size: 0.19rem;
+			background:#ffefac;
+			border:2px solid #f8ca1c;
+			box-shadow:0px 2px 4px 0px #e6a31e;
+			border-radius:15px;
+			width: 2.56rem;
+			height: 0.39rem;
+		}
+		.weixin{
+			height: 1.94rem;
+			width: 1.94rem;
+			margin: 0.68rem auto 0;
+		}
+		.weixin img{
+			width: 100%;
+			height: 100%;
+		}
+		#score{
+			color: red;
+			font-size: 0.2rem;
+		}
+   </style>
+</head>
+<body style="visibility: hidden;">
+	<div id="bg-box">
+		<div class="header">
+			<div class="num">
+			</div>
+		</div>
+		<div class="girl">
+			<img src="img/score-girl.png"/>
+		</div>
+		<div class="score-box">
+			<p>您本次答题成绩<span id="score"></span>分</p>
+			<p id="comment"></p>
+		</div>
+		<div class="button-box">
+			<a href="result.html"><button>查看答案</button></a>
+		</div>
+		<div class="weixin">
+			<img src="img/weixinCode.png"/>
+		</div>
+	</div>
+</body>
+<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/weixinConfig.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function () {
+		$('#score').html(sessionStorage.getItem('score'));
+		$('#comment').html(sessionStorage.getItem('comment'));
+		$('title').html(sessionStorage.getItem('title'));
+	});
+</script>
+</html>

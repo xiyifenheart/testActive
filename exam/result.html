@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>服装圈问答</title>
+    <link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+    <style type="text/css">
+    		html,
+		body {
+			height: 100%;
+			width: 100%;
+		}
+		
+		#bg-box {
+			overflow: auto;
+			height: 100%;
+			width: 100%;
+			background: url(img/bg1.png) no-repeat left top 100%/100%;
+		}
+		
+		.header {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 1;
+		}
+		
+		.num {
+			margin: 0 auto;
+			line-height: 0.56rem;
+			border-radius: 0 0 0.56rem 0.56rem;
+			background-color: #f8976e;
+			width: 1.12rem;
+			height: 0.56rem;
+			font-size: 0.24rem;
+			color: #fff;
+			text-align: center;
+		}
+		.container{
+			margin: 0.765rem auto 0;
+			padding: 0.065rem 0.175rem;
+			background:#fff;
+			border:1px solid rgba(150,150,150,0.26);
+			border-radius:30px;
+			width:3.48rem;
+			min-height: 50%;
+			font-size: 0.12rem;
+		}
+		.container p{
+			min-height: 0.30rem;
+			line-height: 0.30rem;
+		}
+		.weixin{
+			height: 0.97rem;
+			width: 0.97rem;
+			margin: 0.68rem auto 0;
+		}
+		.weixin img{
+			width: 100%;
+			height: 100%;
+		}
+		.weixinText{
+			font-size: 0.12rem;
+			text-align: center;
+		}
+		.weixinText p{
+			height: 0.25rem;
+			line-height: 0.25rem;
+		}
+		.red-span{
+			color: orangered;
+		}
+		.span-block{
+			display: block;
+		}
+   </style>
+</head>
+<body style="visibility: hidden;">
+	<div id="bg-box">
+		<div class="header">
+			<div class="num">
+				答案
+			</div>
+		</div>
+		<div class="container">
+			<ul></ul>
+		</div>
+		<div class="weixin">
+			<img src="img/weixinCode.png"/>
+		</div>
+		<div class="weixinText">
+			<p>更多有趣有料的服装行业资讯</p>
+			<p>扫码关注吧</p>
+		</div>
+	</div>
+</body>
+<script src="../js/rem.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/weixinConfig.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/result.js" type="text/javascript" charset="utf-8"></script>
+</html>

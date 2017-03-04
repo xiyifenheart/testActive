@@ -1,0 +1,69 @@
+{
+    "code": 0,
+    "msg" : "ok",
+    "data": {
+        "paperName": "服装圈问答",
+        "itemList": [
+            {
+                "itemId": "1001",
+                "itemTitle": "意法服饰城属于下列哪个城市？",
+                "itemKind": "0",
+                "optionNum": "4",
+                "itemContent": [
+                    {
+                        "op": "杭州"
+                    },
+                    {
+                        "op": "广州"
+                    },
+                    {
+                        "op": "苏州"
+                    },
+                    {
+                        "op": "澳州"
+                    }
+                ]
+            },
+            {
+                "itemId": "1002",
+                "itemTitle": "欧盟服饰城属于下列哪个城市？",
+                "itemKind": "0",
+                "optionNum": "4",
+                "itemContent": [
+                    {
+                        "op": "杭州2"
+                    },
+                    {
+                        "op": "广州2"
+                    },
+                    {
+                        "op": "苏州2"
+                    },
+                    {
+                        "op": "澳州2"
+                    }
+                ]
+            },
+            {
+                "itemId": "1003",
+                "itemTitle": "英国服饰城属于下列哪个城市？",
+                "itemKind": "0",
+                "optionNum": "4",
+                "itemContent": [
+                    {
+                        "op": "杭州3"
+                    },
+                    {
+                        "op": "广州3"
+                    },
+                    {
+                        "op": "苏州3"
+                    },
+                    {
+                        "op": "澳州3"
+                    }
+                ]
+            }
+        ]
+    }
+}
